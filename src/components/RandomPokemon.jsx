@@ -18,7 +18,7 @@ export default function RandomPokemon() {
       // save result
       let responseBody = await response.json();
       // pass the result into setters
-      setPokemonName(responseBody.name);
+      setPokemonName(responseBody.name);  
       setImageUrl(responseBody.sprites.front_default);
     }
     getRandomPokemon();
